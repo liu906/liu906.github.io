@@ -1,101 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xutong Liu's Homepage</title>
+  <meta charset="UTF-8">
+  <title>Minimal Text-Style Homepage</title>
   <style>
-    /* Basic Reset */
-    body, h1, h2, p, ul, li, details, summary {
-      margin: 0;
-      padding: 0;
-    }
+    /* Minimal styling for a clean, text-focused layout */
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      padding: 1em;
+      margin: 2em;
+      font-family: "Times New Roman", serif;
+      line-height: 1.5;
+      color: #000;
+      background: #fff;
     }
-    header {
-      background: #333;
-      color: #fff;
-      padding: 1em;
-      text-align: center;
+    h1, h2 {
+      margin-bottom: 0.5em;
     }
-    nav ul {
-      list-style: none;
-      text-align: center;
-      margin-top: 0.5em;
+    h1 {
+      font-size: 1.5em;
     }
-    nav ul li {
-      display: inline;
-      margin: 0 10px;
+    h2 {
+      font-size: 1.2em;
+      margin-top: 1.5em;
     }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
-    section {
-      padding: 2em 0;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .section-title {
-      text-align: center;
-      margin-bottom: 1em;
-      font-size: 1.8em;
-    }
-    details {
-      margin-bottom: 1em;
-      border: 1px solid #ccc;
-      padding: 0.5em;
-      border-radius: 5px;
-      background-color: #f9f9f9;
-    }
-    details summary {
-      font-weight: bold;
-      cursor: pointer;
-    }
-    details p {
-      margin: 0.5em 0 0 1em;
-    }
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1em;
-      margin-top: 2em;
+    hr {
+      margin: 1.5em 0;
     }
     a {
-      color: #0066cc;
+      color: #000;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Xutong Liu, PhD</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Name and Contact -->
+  <h1>Your Name</h1>
+  <p>
+    Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br>
+    Affiliation: Your Institution or Company<br>
+    Address: City, Country
+  </p>
 
-  <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p>Welcome to my homepage! I am Xutong Liu, a scholar focusing on defect prediction, test evaluation, and related research fields.</p>
-  </section>
+  <hr>
 
-  <section id="research">
-    <h2 class="section-title">Research</h2>
-    <p>This section highlights my current research projects, methodologies, and interests. Stay tuned for updates!</p>
-  </section>
+  <!-- Current Interests -->
+  <h2>Current Interests</h2>
+  <ul>
+    <li>Defect prediction</li>
+    <li>Test evaluation</li>
+    <li>Machine learning in software engineering</li>
+    <!-- Add more as needed -->
+  </ul>
 
-  <section id="publications">
-    <h2 class="section-title">Publications (9)</h2>
-    
-    <details>
-      <summary>Towards a framework for reliable performance evaluation
+  <hr>
+
+  <!-- Education -->
+  <h2>Education</h2>
+  <p>
+    <strong>Ph.D. in Computer Science</strong><br>
+    University Name (Year - Year)
+  </p>
+  <p>
+    <strong>M.S. in Software Engineering</strong><br>
+    University Name (Year - Year)
+  </p>
+  <!-- Add more degrees or certificates as needed -->
+
+  <hr>
+
+  <!-- Publications -->
+  <h2>Publications</h2>
+  <ul>
+    <li>
+      <strong>Title of Publication 1</strong><br>
+      Journal or Conference, Year<br>
+      DOI: <a href="https://doi.org/XXXXXX" target="_blank">XXXXXX</a>
+    </li>
+    <li>
+      <strong>Title of Publication 2</strong><br>
+      Journal or Conference, Year<br>
+      DOI: <a href="https://doi.org/XXXXXX" target="_blank">XXXXXX</a>
+    </li>
+    <!-- Add more publications as needed -->
+  </ul>
+
+</body>
+</html>

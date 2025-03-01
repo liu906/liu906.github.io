@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xutong Liu | Scholar Homepage</title>
+  <title>Xutong Liu's Homepage</title>
   <style>
     /* Basic Reset */
-    body, h1, h2, p, ul {
+    body, h1, h2, p, ul, li, details, summary {
       margin: 0;
       padding: 0;
     }
@@ -14,6 +14,7 @@
       font-family: Arial, sans-serif;
       line-height: 1.6;
       color: #333;
+      padding: 1em;
     }
     header {
       background: #333;
@@ -35,14 +36,28 @@
       text-decoration: none;
     }
     section {
-      padding: 2em;
-      max-width: 800px;
+      padding: 2em 0;
+      max-width: 900px;
       margin: 0 auto;
     }
     .section-title {
       text-align: center;
       margin-bottom: 1em;
-      font-size: 1.5em;
+      font-size: 1.8em;
+    }
+    details {
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    details summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    details p {
+      margin: 0.5em 0 0 1em;
     }
     footer {
       background: #333;
@@ -50,6 +65,9 @@
       text-align: center;
       padding: 1em;
       margin-top: 2em;
+    }
+    a {
+      color: #0066cc;
     }
   </style>
 </head>
@@ -65,41 +83,19 @@
       </ul>
     </nav>
   </header>
-  
+
   <section id="about">
     <h2 class="section-title">About Me</h2>
-    <p>Hello! I am a scholar specializing in Software Quality Assurance. Welcome to 
-my homepage 
-where I share insights on my research and publications.</p>
+    <p>Welcome to my homepage! I am Xutong Liu, a scholar focusing on defect prediction, test evaluation, and related research fields.</p>
   </section>
-  
+
   <section id="research">
     <h2 class="section-title">Research</h2>
-    <p>This section highlights my current research projects, methodologies, and 
-interests. You can update this area with summaries of ongoing studies and 
-achievements.</p>
+    <p>This section highlights my current research projects, methodologies, and interests. Stay tuned for updates!</p>
   </section>
-  
+
   <section id="publications">
-    <h2 class="section-title">Publications</h2>
-    <ul>
-      <li>Publication Title 1 (Year)</li>
-      <li>Publication Title 2 (Year)</li>
-      <li>Publication Title 3 (Year)</li>
-    </ul>
-  </section>
-  
-  <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p>If you would like to get in touch, please email me at <a 
-href="mailto:email@example.com">email@example.com</a>.</p>
-  </section>
-  
-  <footer>
-    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
-  </footer>
-</body>
-</html>
-
-
-
+    <h2 class="section-title">Publications (9)</h2>
+    
+    <details>
+      <summary>Towards a framework for reliable performance evaluation

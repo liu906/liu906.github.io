@@ -373,6 +373,13 @@ body {
   margin-bottom: 0.3rem;
 }
 
+.pub-authors {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  margin-bottom: 0.65rem;
+  line-height: 1.6;
+}
+
 .pub-year {
   display: inline-block;
   font-size: 0.78rem;

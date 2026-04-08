@@ -396,6 +396,32 @@ body {
   border-bottom-style: solid;
 }
 
+.pub-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.pub-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--bg-card);
+  background: var(--primary);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.pub-links a:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
 /* ===== Students Page ===== */
 .student-entry {
   display: flex;

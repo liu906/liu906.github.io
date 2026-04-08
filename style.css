@@ -397,29 +397,20 @@ body {
 }
 
 .pub-links {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 0.6rem;
-  flex-wrap: wrap;
+  margin-left: 0;
 }
 
 .pub-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.3rem 0.75rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--bg-card);
-  background: var(--primary);
-  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--primary);
   text-decoration: none;
+  border-bottom: 1px dashed var(--primary-light);
   transition: var(--transition);
 }
 
 .pub-links a:hover {
-  background: var(--primary-dark);
-  transform: translateY(-1px);
+  border-bottom-style: solid;
 }
 
 /* ===== Students Page ===== */

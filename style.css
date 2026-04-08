@@ -498,8 +498,9 @@ body {
 /* ===== Contact Page ===== */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 1.25rem;
+  align-items: stretch;
 }
 
 .contact-card {
@@ -510,6 +511,21 @@ body {
   border: 1px solid var(--border);
   transition: var(--transition);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 960px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contact-card:hover {

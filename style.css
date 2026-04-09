@@ -498,7 +498,7 @@ body {
 /* ===== Contact Page ===== */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, minmax(160px, 1fr));
   gap: 1.25rem;
   align-items: stretch;
 }
@@ -516,7 +516,7 @@ body {
   justify-content: space-between;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
   .contact-grid {
     grid-template-columns: repeat(2, minmax(220px, 1fr));
   }

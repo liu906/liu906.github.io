@@ -495,6 +495,56 @@ body {
   border-bottom-style: solid;
 }
 
+/* ===== Service Page ===== */
+.service-entry {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  margin-bottom: 1rem;
+}
+
+.service-entry:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  border-left: 3px solid var(--primary);
+}
+
+.service-year {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: rgba(44, 95, 138, 0.08);
+  padding: 0.2rem 0.7rem;
+  border-radius: 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.service-info {
+  flex: 1;
+}
+
+.service-role {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+
+.service-venue {
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
 /* ===== Contact Page ===== */
 .contact-grid {
   display: grid;

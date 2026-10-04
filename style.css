@@ -547,6 +547,19 @@ body {
 }
 
 /* ===== Teaching Page ===== */
+.teaching-deadline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--recruit);
+  background: rgba(214, 69, 69, 0.08);
+  border: 1px solid rgba(214, 69, 69, 0.25);
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  margin-bottom: 1.25rem;
+}
+
 .teaching-card-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -4,6 +4,7 @@
   --primary-light: #3a7cb8;
   --primary-dark: #1e4263;
   --accent: #e8913a;
+  --recruit: #d64545;
   --bg: #f7f8fc;
   --bg-card: #ffffff;
   --text: #2d3748;
@@ -543,6 +544,162 @@ body {
   font-size: 0.9rem;
   color: var(--accent);
   font-weight: 600;
+}
+
+/* ===== Teaching Page ===== */
+.teaching-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .teaching-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.teaching-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--recruit);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.teaching-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+.teaching-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.recruiting-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--recruit);
+  background: rgba(214, 69, 69, 0.08);
+  border: 1px solid rgba(214, 69, 69, 0.25);
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.recruiting-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--recruit);
+}
+
+.teaching-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.teaching-card-title a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: var(--transition);
+}
+
+.teaching-card-title a:hover {
+  color: var(--primary);
+  border-bottom-color: var(--primary-light);
+}
+
+.teaching-card-org {
+  font-size: 0.88rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.teaching-card-desc {
+  font-size: 0.92rem;
+  color: var(--text);
+  margin-bottom: 0.85rem;
+  line-height: 1.6;
+}
+
+.teaching-card-rq {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  margin-bottom: 0.85rem;
+  line-height: 1.6;
+}
+
+.teaching-card-profile {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  padding-left: 1.1rem;
+}
+
+.teaching-card-profile li {
+  margin-bottom: 0.2rem;
+}
+
+.teaching-card-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.teaching-card-meta {
+  font-size: 0.8rem;
+  color: var(--text-lighter);
+}
+
+.teaching-card-pdf {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--recruit);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--recruit);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.teaching-card-pdf:hover {
+  border-bottom-style: solid;
+}
+
+.teaching-placeholder {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+  border: 1px dashed var(--border);
+  color: var(--text-light);
+  font-size: 0.92rem;
+  text-align: center;
 }
 
 /* ===== Contact Page ===== */
